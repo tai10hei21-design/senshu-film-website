@@ -23,7 +23,7 @@
 @media (max-width: 700px) {
   .films {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 12px;
     padding: 10px;
   }
 }
