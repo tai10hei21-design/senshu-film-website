@@ -6,3 +6,24 @@
   display: block;
   margin: 20px auto;
 }
+
+.films {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.film {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .films {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+}
