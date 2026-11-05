@@ -33,3 +33,11 @@
     object-fit: contain;
   }
 }
+
+.schedule-poster {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
