@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SENSHU FILM CLUB | SPECIAL SCREENING</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #090909;
+  color: #f5f5f5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.status {
+  color: #ff3434;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.hero {
+  min-height: 620px;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at center, #351010 0%, #160909 35%, #090909 75%);
+}
+
+.warning {
+  color: #ff3434;
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-bottom: 35px;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.35; }
+}
+
+.hero h1 {
+  font-size: clamp(35px, 8vw, 76px);
+  line-height: 1.4;
+  letter-spacing: 4px;
+}
+
+.hero h1 span {
+  color: #e52b2b;
+}
+
+.hero p {
+  margin-top: 30px;
+  color: #aaa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.line {
+  width: 55px;
+  height: 3px;
+  background: #d82929;
+  margin: 35px auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 35px;
+  border: 1px solid #d82929;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #d82929;
+}
+
+section {
+  padding: 90px 8%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 27px;
+  letter-spacing: 4px;
+}
+
+.section-title p {
+  color: #d82929;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.intro {
+  text-align: center;
+  color: #bbb;
+  max-width: 650px;
+  margin: auto;
+}
+
+.films {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.film {
+  border: 1px solid #333;
+  background: #141414;
+  padding: 30px;
+  min-height: 180px;
+  transition: 0.3s;
+}
+
+.film:hover {
+  border-color: #d82929;
+  transform: translateY(-4px);
+}
+
+.film-number {
+  color: #d82929;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.film h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.film p {
+  color: #999;
+  font-size: 13px;
+}
+
+.info {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.info-row {
+  display: flex;
+  padding: 20px 10px;
+  border-bottom: 1px solid #292929;
+}
+
+.info-row strong {
+  width: 130px;
+  color: #e52b2b;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+
+.access {
+  text-align: center;
+  color: #bbb;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 15px;
+  border-top: 1px solid #333;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .films {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SENSHU FILM CLUB</div>
+  <div class="status">● SPECIAL SCREENING</div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="warning">● WARNING : YOU HAVE BEEN DETECTED</div>
+
+  <h1>
+    あなたは、<br>
+    <span>目撃した。</span>
+  </h1>
+
+  <p>次は、あなたが観る番だ。</p>
+
+  <div class="line"></div>
+
+  <p>SENSHU UNIVERSITY FILM CLUB</p>
+
+  <a href="#films" class="button">上映作品を確認する →</a>
+</div>
+
+<section>
+  <div class="section-title">
+    <p>INVITATION</p>
+    <h2>招待状</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="intro">
+    あなたは偶然、このページにたどり着いた。<br>
+    しかし、これは偶然ではない。<br><br>
+    専修大学映画研究同好会が制作した作品を上映します。<br>
+    学生たちが作り上げた映画の世界を、ぜひ会場で体験してください。
+  </div>
+</section>
+
+<section id="films">
+  <div class="section-title">
+    <p>SCREENING PROGRAM</p>
+    <h2>上映作品</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="films">
+    <div class="film">
+      <div class="film-number">FILM 01</div>
+      <h3>作品タイトル 01</h3>
+      <p>ここに作品のあらすじを掲載します。</p>
+    </div>
+
+    <div class="film">
+      <div class="film-number">FILM 02</div>
+      <h3>作品タイトル 02</h3>
+      <p>ここに作品のあらすじを掲載します。</p>
+    </div>
+
+    <div class="film">
+      <div class="film-number">FILM 03</div>
+      <h3>作品タイトル 03</h3>
+      <p>ここに作品のあらすじを掲載します。</p>
+    </div>
+
+    <div class="film">
+      <div class="film-number">FILM 04</div>
+      <h3>作品タイトル 04</h3>
+      <p>ここに作品のあらすじを掲載します。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <p>INFORMATION</p>
+    <h2>上映会情報</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="info">
+    <div class="info-row">
+      <strong>DATE</strong>
+      <span>鳳祭開催日（日時を後日掲載）</span>
+    </div>
+
+    <div class="info-row">
+      <strong>PLACE</strong>
+      <span>専修大学 鳳祭上映会場</span>
+    </div>
+
+    <div class="info-row">
+      <strong>ENTRANCE</strong>
+      <span>入場無料（予定）</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <p>ACCESS</p>
+    <h2>会場案内</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="access">
+    専修大学の上映会場でお待ちしています。<br>
+    詳細な場所は開催情報をご確認ください。
+  </div>
+</section>
+
+</main>
+
+<footer>
+  SENSHU UNIVERSITY FILM CLUB<br><br>
+  © SENSHU FILM CLUB
+</footer>
+
+</body>
+</html>
